@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jayadev | Cinematic Visuals</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:#090909;color:#fff;
+  font-family:Arial,sans-serif;
+}
+nav{
+  display:flex;justify-content:space-between;
+  padding:25px 8%;align-items:center;
+  border-bottom:1px solid #292929;
+}
+.logo{font-size:23px;font-weight:bold;letter-spacing:2px}
+.logo span{color:#c9a45c}
+nav a{color:#aaa;text-decoration:none;margin-left:22px;font-size:13px}
+.hero{
+  min-height:85vh;display:flex;
+  flex-direction:column;justify-content:center;
+  padding:80px 10%;
+  background:linear-gradient(90deg,#090909 20%,#09090999),
+  url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1800') center/cover;
+}
+.tag{color:#c9a45c;letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(48px,9vw,105px);line-height:1.05;margin:25px 0}
+h1 span{color:#c9a45c}
+.hero p{color:#aaa;max-width:450px;line-height:1.8}
+.btn{
+ display:inline-block;margin-top:30px;
+ padding:15px 27px;background:#c9a45c;
+ color:#090909;text-decoration:none;
+ font-weight:bold;font-size:12px;letter-spacing:1px;
+}
+section{padding:90px 10%}
+.heading{font-size:38px;margin-bottom:15px}
+.sub{color:#999;margin-bottom:40px;line-height:1.7}
+.gold{color:#c9a45c}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.project{
+ height:300px;position:relative;overflow:hidden;
+ background:#191919;
+}
+.project img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.project:hover img{transform:scale(1.07)}
+.project div{
+ position:absolute;bottom:0;width:100%;
+ padding:25px;background:linear-gradient(transparent,#000);
+}
+.project h3{font-size:21px}
+.project p{color:#c9a45c;font-size:12px;margin-top:7px}
+.about{background:#111}
+.about p{color:#aaa;line-height:2;max-width:650px}
+.contact{text-align:center}
+.contact p{color:#aaa;margin-top:15px}
+footer{
+ text-align:center;padding:30px;
+ border-top:1px solid #292929;color:#777;font-size:12px
+}
+@media(max-width:650px){
+ nav{padding:20px 5%}
+ nav a{margin-left:10px;font-size:11px}
+ .grid{grid-template-columns:1fr}
+ section{padding:65px 7%}
+ .project{height:240px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="logo">JAYADEV<span>.</span></div>
+ <div>
+  <a href="#work">WORK</a>
+  <a href="#about">ABOUT</a>
+  <a href="#contact">CONTACT</a>
+ </div>
+</nav>
+
+<header class="hero">
+ <div class="tag">VIDEO EDITOR • COLORIST • VISUAL ARTIST</div>
+ <h1>CREATING<br><span>VISUAL</span><br>STORIES.</h1>
+ <p>
+  Every frame has a story. I transform moments
+  into cinematic experiences through editing,
+  storytelling and color grading.
+ </p>
+ <a href="#work" class="btn">EXPLORE MY WORK ↗</a>
+</header>
+
+<section id="work">
+ <h2 class="heading">SELECTED <span class="gold">WORK.</span></h2>
+ <p class="sub">A collection of visual stories and creative projects.</p>
+
+ <div class="grid">
+  <div class="project">
+   <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=900" alt="Wedding photography">
+   <div><h3>Wedding Films</h3><p>EMOTIONS • STORYTELLING</p></div>
+  </div>
+  <div class="project">
+   <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=900" alt="Cinematic landscape">
+   <div><h3>Cinematic Visuals</h3><p>FILM • ATMOSPHERE</p></div>
+  </div>
+  <div class="project">
+   <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900" alt="Event production">
+   <div><h3>Event Films</h3><p>ENERGY • MOMENTS</p></div>
+  </div>
+  <div class="project">
+   <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=900" alt="Camera equipment">
+   <div><h3>Creative Projects</h3><p>EXPERIMENT • ART</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <h2 class="heading">BEHIND THE <span class="gold">FRAME.</span></h2>
+ <p>
+  Hello, I'm Jayadev, a video editor passionate
+  about cinematic storytelling and visual creativity.
+  I work with DaVinci Resolve and Adobe Premiere Pro
+  to bring stories to life through editing and color.
+  <br><br>
+  My vision is simple: make every frame unforgettable.
+ </p>
+</section>
+
+<section class="contact" id="contact">
+ <div class="tag">LET'S CREATE SOMETHING</div>
+ <h2 class="heading" style="margin-top:20px">HAVE A <span class="gold">PROJECT?</span></h2>
+ <p>Let's turn your vision into a cinematic story.</p>
+ <a class="btn" href="mailto:YOUR_EMAIL@gmail.com">CONTACT ME ↗</a>
+</section>
+
+<footer>
+ © 2026 JAYADEV • MADE WITH CREATIVITY.
+</footer>
+
+</body>
+</html>
